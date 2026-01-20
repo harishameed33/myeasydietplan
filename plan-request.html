@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Request Your Free Diet Plan</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
@@ -12,10 +12,10 @@
   <header class="navbar">
     <div class="logo">MyEasyDietPlan</div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="plan-request.html">Get a Free Plan</a>
+      <a href="/">Home</a>
+      <a href="/plan-request/">Get a Free Plan</a>
     </nav>
-    <a class="btn" href="plan-request.html">Start</a>
+    <a class="btn" href="/plan-request/">Start</a>
   </header>
 
   <main class="section">
@@ -29,10 +29,9 @@
           method="POST"
           data-netlify="true"
           class="form-card">
-    
-      <input type="hidden" name="form-name" value="diet-plan-request" />
-      <input type="hidden" name="redirect" value="/success.html" />
 
+      <input type="hidden" name="form-name" value="diet-plan-request" />
+      <input type="hidden" name="redirect" value="/success/" />
 
       <!-- 1 -->
       <label>Your Email *</label>
