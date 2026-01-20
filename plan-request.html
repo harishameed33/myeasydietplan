@@ -24,22 +24,17 @@
       Answer a few quick questions and we’ll prepare your plan and send it to your email.
     </p>
 
-    <!-- ✅ NETLIFY FORM START -->
+    <!-- ✅ FORMSPREE FORM START -->
     <form
-      name="diet-plan-request"
+      action="https://formspree.io/f/mqeedrvd"
       method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      action="success.html"
       class="form-box"
     >
-      <!-- ✅ REQUIRED hidden input -->
-      <input type="hidden" name="form-name" value="diet-plan-request" />
+      <!-- ✅ Redirect after successful submission -->
+      <input type="hidden" name="_next" value="https://harishameed33.github.io/myeasydietplan/success.html">
 
-      <!-- ✅ Honeypot anti-spam -->
-      <p style="display:none;">
-        <label>Don’t fill this out: <input name="bot-field" /></label>
-      </p>
+      <!-- ✅ Optional: Email subject -->
+      <input type="hidden" name="_subject" value="New Diet Plan Request ✅">
 
       <label>Your Name</label>
       <input type="text" name="name" placeholder="Your full name" required />
@@ -83,7 +78,7 @@
 
       <button type="submit" class="btn-submit">Submit ✅</button>
     </form>
-    <!-- ✅ NETLIFY FORM END -->
+    <!-- ✅ FORMSPREE FORM END -->
 
   </main>
 
