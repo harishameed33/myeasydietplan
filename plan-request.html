@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Your Free Diet Plan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">MyEasyDietPlan</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="plan-request.html">Get a Free Plan</a>
+    </nav>
+    <a class="btn" href="plan-request.html">Start</a>
+  </header>
+
+  <main class="section">
+    <h2>Get Your Free Diet Plan ✅</h2>
+    <p class="subtitle">
+      Answer a few quick questions and we’ll prepare your plan and send it to your email.
+    </p>
+
+    <!-- NETLIFY FORM START -->
+    <form name="diet-plan-request"
+          method="POST"
+          data-netlify="true"
+          action="/success.html"
+          class="form-card">
+
+      <input type="hidden" name="form-name" value="diet-plan-request" />
+
+      <!-- 1 -->
+      <label>Your Email *</label>
+      <input type="email" name="email" required placeholder="example@gmail.com" />
+
+      <!-- 2 -->
+      <label>Full Name (optional)</label>
+      <input type="text" name="name" placeholder="Your name" />
+
+      <!-- 3 -->
+      <label>Age *</label>
+      <input type="number" name="age" required placeholder="e.g., 28" />
+
+      <!-- 4 -->
+      <label>Gender *</label>
+      <select name="gender" required>
+        <option value="">Select</option>
+        <option>Female</option>
+        <option>Male</option>
+        <option>Prefer not to say</option>
+      </select>
+
+      <!-- 5 -->
+      <label>Height (cm) *</label>
+      <input type="number" name="height_cm" required placeholder="e.g., 170" />
+
+      <!-- 6 -->
+      <label>Weight (kg) *</label>
+      <input type="number" name="weight_kg" required placeholder="e.g., 80" />
+
+      <!-- 7 -->
+      <label>Your Goal *</label>
+      <select name="goal" required>
+        <option value="">Select</option>
+        <option>Lose weight</option>
+        <option>Maintain weight</option>
+        <option>Gain weight</option>
+        <option>Gain muscle</option>
+      </select>
+
+      <!-- 8 -->
+      <label>Activity level *</label>
+      <select name="activity" required>
+        <option value="">Select</option>
+        <option>Low (desk job, little walking)</option>
+        <option>Light (some walking, light exercise)</option>
+        <option>Moderate (exercise 3–4 days/week)</option>
+        <option>High (daily workout / physical job)</option>
+      </select>
+
+      <!-- 9 -->
+      <label>Diet preference *</label>
+      <select name="diet_preference" required>
+        <option value="">Select</option>
+        <option>Vegetarian</option>
+        <option>Non-vegetarian</option>
+        <option>Vegan</option>
+        <option>Low-carb</option>
+        <option>Keto</option>
+        <option>Balanced (recommended)</option>
+      </select>
+
+      <!-- 10 -->
+      <label>How many meals per day do you prefer? *</label>
+      <select name="meals_per_day" required>
+        <option value="">Select</option>
+        <option>2 meals</option>
+        <option>3 meals</option>
+        <option>4 meals</option>
+        <option>5 meals</option>
+      </select>
+
+      <!-- 11 -->
+      <label>Do you want snacks included? *</label>
+      <select name="snacks" required>
+        <option value="">Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <!-- 12 -->
+      <label>Food allergies / intolerances</label>
+      <input type="text" name="allergies" placeholder="e.g., lactose, gluten, nuts" />
+
+      <!-- 13 -->
+      <label>Foods you dislike (optional)</label>
+      <input type="text" name="dislikes" placeholder="e.g., eggs, fish, oats" />
+
+      <!-- 14 -->
+      <label>Typical daily routine *</label>
+      <select name="routine" required>
+        <option value="">Select</option>
+        <option>Office / desk job</option>
+        <option>Student</option>
+        <option>Stay at home</option>
+        <option>Physical job</option>
+        <option>Shift work / night shifts</option>
+      </select>
+
+      <!-- 15 -->
+      <label>How much water do you drink per day?</label>
+      <select name="water_intake">
+        <option value="">Select</option>
+        <option>Less than 1L</option>
+        <option>1–2L</option>
+        <option>2–3L</option>
+        <option>More than 3L</option>
+      </select>
+
+      <!-- 16 -->
+      <label>Do you have strong sweet cravings? *</label>
+      <select name="sweet_cravings" required>
+        <option value="">Select</option>
+        <option>Yes</option>
+        <option>Sometimes</option>
+        <option>No</option>
+      </select>
+
+      <!-- 17 -->
+      <label>Biggest challenge (choose one) *</label>
+      <select name="challenge" required>
+        <option value="">Select</option>
+        <option>Late night eating</option>
+        <option>Sweet cravings</option>
+        <option>Portion control</option>
+        <option>Eating out often</option>
+        <option>No motivation</option>
+        <option>Busy schedule</option>
+      </select>
+
+      <!-- 18 -->
+      <label>Any medical notes? (optional)</label>
+      <input type="text" name="medical_notes" placeholder="e.g., diabetes, PCOS, thyroid (optional)" />
+
+      <button class="btn full" type="submit">Submit Request ✅</button>
+    </form>
+    <!-- NETLIFY FORM END -->
+  </main>
+
+  <footer class="footer">
+    <p><strong>MyEasyDietPlan</strong> — free beginner-friendly diet plans.</p>
+  </footer>
+
+</body>
+</html>
